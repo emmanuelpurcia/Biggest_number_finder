@@ -8,18 +8,21 @@ import tkinter as tk
 
 # Create a tkinter window
 window = tk.Tk()
-window.title("Coolest Number Finder")
-window.geometry("800x300")
+window.title("BIGGEST NUMBER FINDER")
+window.geometry("750x250")
+
+# Set the color theme
+window.configure(bg="lightblue")
 
 # Create a tkinter canvas
-canvas = tk.Canvas(window, width=400, height=300)
+canvas = tk.Canvas(window, width=400, height=300, bg="lightblue", highlightthickness=0)
 canvas.pack()
 
 # Create a tkinter font for the welcome message and the output
-cool_font = ("Helvetica", 20, "bold")
+cool_font = ("Comic Sans MS", 16, "bold")
 
 # Create a tkinter label for the welcome message
-welcome_label = tk.Label(window, text="WELCOME TO PYTHON'S BIGGEST NUMBER FINDER!", font=cool_font)
+welcome_label = tk.Label(window, text="WELCOME USER! PLEASE INPUT ANY THREE NUMBERS BELOW!", font=cool_font, fg="black", bg="white")
 canvas.create_window(200, 50, window=welcome_label)
 
 # Create tkinter entry boxes for the input numbers
